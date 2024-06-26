@@ -1,9 +1,19 @@
 <div class="container">
   @for(step of steps; track step.title){
-  <div>
-    <h3>{{ step.title }}</h3>
+
+  <div class="card" style="width: 18rem">
+    <img class="card-img-top" src="..." alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{ step.title }}</h5>
+      <p class="card-text">
+        {{ step.description }}
+      </p>
+    </div>
+
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
   </div>
-  <div>{{ step.description }}</div>
-  <br />
   }
 </div>
