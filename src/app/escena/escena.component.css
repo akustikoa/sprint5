@@ -1,3 +1,17 @@
-.container {
-  padding: 300px;
+.escena-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 30px;
+}
+.body {
+  /*validar si aplica */
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
