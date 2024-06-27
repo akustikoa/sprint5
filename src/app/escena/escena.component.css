@@ -6,12 +6,20 @@
   border-radius: 30px;
 }
 .body {
-  /*validar si aplica */
-  background-color: #000000;
+  background-color: #000000 !important;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+.custom-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
 }

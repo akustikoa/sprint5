@@ -7,9 +7,12 @@
         class="col-12 col-sm-10 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"
       >
         @for (step of steps; track $index) { @if ($index === currentStep) {
-        <div class="card shadow-lg border-0 m-4" style="width: 18rem">
+        <div
+          class="card border-top-5 shadow-lg border-0 m-4"
+          style="width: 18rem"
+        >
           <img
-            class="card-img-top img-fluid"
+            class="card-img-top img-fluid rounded-top-5"
             [src]="step.img"
             [style.background-color]="'#' + step.bgcolor"
             alt="Card image cap"
