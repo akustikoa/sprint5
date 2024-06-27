@@ -10,4 +10,19 @@ import { iStep } from '../i-step';
 })
 export class EscenaComponent {
   @Input() steps: iStep[] = []; // definim entrada de l'array del servei
+
+  public currentStep = 0;
+
+  augmentar(): void {
+    this.currentStep++;
+    console.log(this.currentStep);
+  }
+
+  disminuir(): void {
+    this.currentStep--;
+    console.log(this.currentStep);
+  }
+  setCurrentStepTo(x: number) {
+    this.currentStep = x;
+  }
 }

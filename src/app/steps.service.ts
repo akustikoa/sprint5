@@ -28,6 +28,9 @@ export class StepsService {
       bgcolor: 'FCE46E',
     },
   ];
+  getSteps() {
+    return this.steps;
+  }
 
   constructor() {}
 }
