@@ -24,16 +24,30 @@
             </p>
           </div>
 
-          <div class="card-body d-flex flex-row-reverse">
-            @if (currentStep!==0) {
-            <button (click)="disminuir()" class="custom-btn btn btn-light">
-              <i class="fas fa-arrow-left text-dark"></i>
-            </button>
-            } @if (currentStep !== steps.length - 1){
-            <button (click)="augmentar()" class="custom-btn btn btn-dark">
-              <i class="fas fa-arrow-right text-light"></i>
-            </button>
-            }
+          <div class="d-flex justify-content-between mb-2">
+            <div class="scroll">
+              @for (step of steps; track $index) {
+              <div
+                (click)="setCurrentStepTo($index)"
+                class="ball"
+                [class.active]="currentStep === $index"
+              ></div>
+              }
+            </div>
+            <div class="card-body d-flex flex-row-reverse">
+              @if (currentStep !== steps.length - 1){
+              <button
+                (click)="augmentar()"
+                class="custom-btn btn btn-dark ms-2"
+              >
+                <i class="fas fa-arrow-right text-light"></i>
+              </button>
+              } @if (currentStep!==0) {
+              <button (click)="disminuir()" class="custom-btn btn btn-light">
+                <i class="fas fa-arrow-left text-dark"></i>
+              </button>
+              }
+            </div>
           </div>
         </div>
         }}

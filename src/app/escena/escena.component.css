@@ -5,14 +5,20 @@
   height: 100vh;
   border-radius: 30px;
 }
-.body {
-  background-color: #000000 !important;
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+
+  cursor: pointer;
+}
+.scroll {
+  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 .custom-btn {
   border-radius: 50%;
