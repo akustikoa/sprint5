@@ -15,12 +15,10 @@ export class EscenaComponent {
 
   augmentar(): void {
     this.currentStep++;
-    console.log(this.currentStep);
   }
 
   disminuir(): void {
     this.currentStep--;
-    console.log(this.currentStep);
   }
   setCurrentStepTo(x: number) {
     this.currentStep = x;

@@ -1,17 +1,9 @@
-.escena-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  border-radius: 30px;
-}
 .ball {
   width: 10px;
   height: 10px;
   background-color: gray;
   border-radius: 50%;
   margin: 0 5px;
-
   cursor: pointer;
 }
 .active {
