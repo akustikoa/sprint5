@@ -9,7 +9,7 @@ import { iStep } from '../i-step';
   styleUrl: './escena.component.css',
 })
 export class EscenaComponent {
-  @Input() steps: iStep[] = []; // definim entrada de l'array del servei
+  @Input() steps: iStep[] = []; //entrada de l'array del servei
 
   public currentStep = 0;
 
@@ -20,7 +20,7 @@ export class EscenaComponent {
   disminuir(): void {
     this.currentStep--;
   }
-  setCurrentStepTo(x: number) {
+  posicioStep(x: number) {
     this.currentStep = x;
   }
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { EscenaComponent } from '../escena/escena.component';
-import { iStep } from '../i-step';
 import { StepsService } from '../steps.service';
 
 @Component({
@@ -11,10 +10,6 @@ import { StepsService } from '../steps.service';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  // public steps: iStep[]; //creem array de frases
-  // constructor(public arrayService: StepsService) {
-  //   this.steps = this.arrayService['steps'];
-  // }
-  constructor(private stepsService: StepsService) {}
+  constructor(public stepsService: StepsService) {}
   steps = this.stepsService.steps;
 }

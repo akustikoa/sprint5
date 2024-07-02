@@ -1,9 +1,4 @@
-<!-- <div
-  class="escena-container container d-flex justify-content-center align-items-lg-center"
-> -->
-<div
-  class="container d-flex justify-content-center align-items-center vh-100 v"
->
+<div class="container d-flex justify-content-center align-items-center vh-100">
   <div class="row">
     <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mt-5">
       @for (step of steps; track $index) { @if ($index === currentStep) {
@@ -15,7 +10,7 @@
           class="card-img-top img-fluid rounded-top-3"
           [src]="step.img"
           [style.background-color]="'#' + step.bgcolor"
-          alt="Card image cap"
+          alt="Card imatge"
         />
         <div class="card-body p-4">
           <h6 class="card-title fw-bold mb-4">{{ step.title }}</h6>
@@ -28,7 +23,7 @@
           <div class="ball-center">
             @for (step of steps; track $index) {
             <div
-              (click)="setCurrentStepTo($index)"
+              (click)="posicioStep($index)"
               class="ball"
               [class.active]="currentStep === $index"
             ></div>
@@ -54,4 +49,3 @@
     </div>
   </div>
 </div>
-<!-- </div> -->
